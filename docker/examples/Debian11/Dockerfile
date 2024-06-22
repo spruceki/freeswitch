@@ -53,3 +53,5 @@ RUN apt-get clean
 
 # Uncomment to cleanup even more
 #RUN rm -rf /usr/src/*
+
+CMD /usr/local/freeswitch/bin/freeswitch -nonat -c
