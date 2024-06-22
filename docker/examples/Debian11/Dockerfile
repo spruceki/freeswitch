@@ -7,6 +7,7 @@ RUN git clone https://github.com/signalwire/freeswitch /usr/src/freeswitch
 RUN git clone https://github.com/signalwire/libks /usr/src/libs/libks
 RUN git clone https://github.com/freeswitch/sofia-sip /usr/src/libs/sofia-sip
 RUN git clone https://github.com/freeswitch/spandsp /usr/src/libs/spandsp
+RUN cd /usr/src/libs/spandsp && git checkout 67d2455efe02e7ff0d897f3fd5636fed4d54549e
 RUN git clone https://github.com/signalwire/signalwire-c /usr/src/libs/signalwire-c
 
 RUN DEBIAN_FRONTEND=noninteractive apt-get -yq install \
